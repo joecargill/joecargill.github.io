@@ -25,7 +25,8 @@ taxonomies = [
 
 after_dark_menu = [
   {url = "$BASE_URL", name = "Home"},
+  {url = "$BASE_URL/about", name = "About"},
   {url = "$BASE_URL/categories", name = "Categories"},
-  {url = "$BASE_URL/tags", name = "Tags"},
-  {url = "httos://google.com", name = "Google"},
+  {url = "https://github.com/joecargill", name = "GitHub"},
+  {url = "https://linkedin.com/in/joecargill", name = "Linkedin"}
 ]
