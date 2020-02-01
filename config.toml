@@ -32,6 +32,12 @@ after_dark_menu = [
   {url = "https://linkedin.com/in/joecargill", name = "Linkedin"}
 ]
 
+### TERMINIMAL THEME SETTINGS
+
+logo_text = "Joe Cargill"
+
+background_color = "dark"
+
 # menu is enabled by adding menu_items (optional)
 menu_items = [
     # each of these is optional, name and url are required
