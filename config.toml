@@ -31,3 +31,19 @@ after_dark_menu = [
   {url = "https://github.com/joecargill", name = "GitHub"},
   {url = "https://linkedin.com/in/joecargill", name = "Linkedin"}
 ]
+
+# menu is enabled by adding menu_items (optional)
+menu_items = [
+    # each of these is optional, name and url are required
+    # $BASE_URL is going to be substituted by base_url from configuration
+    {name = "blog", url = "$BASE_URL"},
+
+    # tags should only be enabled if you have "tags" taxonomy
+    # see documentation below for more details
+    {name = "about me", url = "$BASE_URL/about"},
+
+    # set newtab to true to make the link open in new tab
+    {name = "github", url = "https://github.com/joecargill", newtab = true},
+    {name = "resume", url = "https://drive.google.com/file/d/1I7wV0fVfiOXWz5nOLnb_lyHdqHkq1mWm/view?usp=sharing", newtab = true}
+]
+
