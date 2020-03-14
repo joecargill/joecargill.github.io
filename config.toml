@@ -1,55 +1,21 @@
-# The URL the site will be built for
-base_url = "https://jcargill.me"
+base_url = "https://joe.cargill.ie"
 
-# Whether to automatically compile all Sass files in the sass directory
+title = "Joe Cargill."
+description = "Software Engineer."
+
 compile_sass = true
-
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-#theme = "after-dark"
-theme = "terminimal"
-
-taxonomies = [
-  # You can enable/disable RSS
-  {name = "categories", rss = true},
-  {name = "tags", rss = true},
-]
-
-
-[extra]
 # Put all your custom variables here
-
-after_dark_menu = [
-  {url = "$BASE_URL", name = "Home"},
-  {url = "$BASE_URL/about", name = "About"},
-  {url = "$BASE_URL/categories", name = "Categories"},
+[extra]
+hyde_sticky = false
+hyde_reverse = false
+hyde_theme = ""
+hyde_links = [
+  {url = "/blog", name = "Blog"},
+  {url = "/about", name = "About"},
   {url = "https://github.com/joecargill", name = "GitHub"},
-  {url = "https://linkedin.com/in/joecargill", name = "Linkedin"}
+  {url = "https://linkedin.com/in/joecargill", name = "LinkedIn"},
+  {url = "https://drive.google.com/file/d/1I7wV0fVfiOXWz5nOLnb_lyHdqHkq1mWm/view?usp=sharing", name = "Resume", newtab = true}
 ]
-
-### TERMINIMAL THEME SETTINGS
-
-logo_text = "JOE CARGILL"
-
-background_color = "dark"
-
-# menu is enabled by adding menu_items (optional)
-menu_items = [
-    # each of these is optional, name and url are required
-    # $BASE_URL is going to be substituted by base_url from configuration
-    {name = "blog", url = "$BASE_URL"},
-
-    # tags should only be enabled if you have "tags" taxonomy
-    # see documentation below for more details
-    {name = "about me", url = "$BASE_URL/about"},
-
-    # set newtab to true to make the link open in new tab
-    {name = "github", url = "https://github.com/joecargill", newtab = true},
-    {name = "resume", url = "https://drive.google.com/file/d/1I7wV0fVfiOXWz5nOLnb_lyHdqHkq1mWm/view?usp=sharing", newtab = true}
-]
-

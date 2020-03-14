@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+      <!-- Media Specific CSS -->
+      <link rel="stylesheet" href="{{ get_url(path="media/print.css", trailing_slash=false) }}" media="print">
+      
+      <!-- Layout CSS -->
+      <link rel="stylesheet" href="{{ get_url(path="layout/sidebar.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="layout/container.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="layout/masthead.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="layout/pagination.css", trailing_slash=false) }}">
+      
+      <!-- Format CSS -->
+      <link rel="stylesheet" href="{{ get_url(path="style/global.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="style/page.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="style/post.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="style/custom.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Fira+Code:300;400;500;600;700|Work+Sans:ital,wght@0,400;0,531;0,700;0,800;1,400;1,700;1,800">
+
+      {% if config.generate_rss %}
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+      {% endif %}
+
+      {% block extra_head %}
+      {% endblock extra_head %}
+    </head>
+
+    <body class="{{ config.extra.hyde_theme }} {% if config.extra.hyde_reverse %}layout-reverse{% endif %}">
+        <header class="masthead">
+            <h3 class="masthead-title">
+                <a class="home" href="{{ config.base_url }}" title="Home">{{ config.title }}</a>
+                <small>{{ config.description }}</small>
+                {# {# {% for link in config.extra.hyde_links %}
+                    <small class="nav-item"><a href="{{link.url}}">{{link.name}}</a></small>
+                {% endfor %} #}
+                <nav class="links">
+                <ul>
+                    {% for link in config.extra.hyde_links %}
+                    <li><a href="{{link.url}}">{{link.name}}</a></li>
+                    {% endfor %}
+                </ul>
+                </nav>
+                
+
+            </h3>
+        </header>
+        
+        {% block layout %}
+        {% endblock layout %}
+    </body>
+
+</html>
