@@ -37,7 +37,7 @@ html {
 
 body {
     color: #ffffff;
-    background-color: #202020;
+    background-color: #101010;
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
 }
@@ -50,7 +50,9 @@ body {
   /* `:focus` is linked to `:hover` for basic accessibility */
   a:hover,
   a:focus {
-    text-decoration: underline;
+    // text-decoration: underline;
+    background-color: white;
+    color: black !important;
   }
   
   /* Headings */

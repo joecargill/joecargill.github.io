@@ -1,6 +1,7 @@
 +++
 title = "Beating Baddies"
 date = 2020-01-01
+description = "Being bad but bad beings bear bans"
 +++
 
 Hyde is a brazen two-column *Jekyll* theme that pairs a prominent sidebar with uncomplicated content. It's based on **Poole**, the Jekyll butler.

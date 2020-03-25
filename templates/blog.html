@@ -1,15 +1,28 @@
 {% extends "index.html" %}
 
+{% set section = get_section(path="blog/_index.md") %}
 {% block content %}
 <div class="posts">
     {% for post in section.pages | reverse %}
-        <div class="post">
-            <h1 class="post-title">
-                <a href="{{ post.permalink }}">
-                    {{ post.title }}
-                </a>
-            </h1>
-            <span class="post-date">{{ post.date | date(format="%Y-%m-%d") }}</span>
+        <div class="post-container">
+            <div class="post-title-container">
+                <div class="post-summary">
+                <h2 class="post-title">
+                    <a href="{{ post.permalink }}">
+                        {{ post.title }}
+                    </a>
+                </h2>
+                
+                </div>
+                <div class="post-info">
+                    <span><strong>{{ post.date | date(format="%Y-%m-%d") }}</strong></span>
+                </div>
+            </div>
+            {% if post.description %}
+            <div class="post-content-container">
+            <small class="post-summary"><i>{{ post.description }}</i></small>
+            </div>
+            {% endif %}
         </div>
     {% endfor %}
 </div>

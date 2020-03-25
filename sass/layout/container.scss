@@ -13,8 +13,8 @@ Align contents with a 25% wide sidebar.
   }
 
 .content {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 @supports(padding: m#{a}x(opx)) {
@@ -26,15 +26,16 @@ Align contents with a 25% wide sidebar.
 
 @media (min-width: 48em) {
     .content {
-        max-width: 38rem;
+        max-width: 100%;
         margin-left: 20rem;
-        margin-right: 2rem;
+        margin-right: 3%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }
 
 @media (min-width: 64em) {
     .content {
-        margin-left: 32rem;
-        margin-right: 4rem;
+        margin-left: 30rem;
     }
 }

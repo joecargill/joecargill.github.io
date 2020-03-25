@@ -1,7 +1,8 @@
 base_url = "https://joe.cargill.ie"
 
 title = "Joe Cargill."
-description = "Software Engineer."
+description = """A personal website for writing about software engineering, 
+rock-climbing, reading, and anything else"""
 
 compile_sass = true
 highlight_code = true

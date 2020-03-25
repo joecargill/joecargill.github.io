@@ -1,6 +1,7 @@
 +++
 title = "Elephant's Everlasting Ecstasy"
 date = 2020-01-01
+description = "Every evening each everlasting epoch ends"
 +++
 
 Hyde is a brazen two-column *Jekyll* theme that pairs a prominent sidebar with uncomplicated content. It's based on **Poole**, the Jekyll butler.

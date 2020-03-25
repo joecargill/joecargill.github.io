@@ -1,7 +1,28 @@
-{% extends "base.html" %}
+{% extends "index.html" %}
 
+{% block sidebar %}
+{% set blog_posts = get_section(path="blog/_index.md") %}
+<div class="posts">
+    {% for post in blog_posts.pages | reverse %}
+        <div class="post-container">
+            <div class="post-title-container">
+                <div class="post-summary">
+                  <h4 class="post-title">
+                      <a href="{{ post.permalink }}">
+                          {{ post.title }}
+                      </a>
+                  </h4>
+                </div>
+                <div class="post-info">
+                    <span><strong>{{ post.date | date(format="%Y-%m-%d") }}</strong></span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock sidebar %}
 
-{% block layout %}
+{% block content %}
 <div class="blog-content container">
   <div class="post">
     <h1 class="post-title">{{ page.title }}</h1>
@@ -9,5 +30,5 @@
     {{ page.content | safe }}
   </div>
 </div>
-{% endblock layout %}
+{% endblock content %}
 

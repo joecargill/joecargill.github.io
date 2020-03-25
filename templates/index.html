@@ -3,7 +3,11 @@
 {% block layout %}
     <div class="sidebar">
         <div class="container {% if config.extra.hyde_sticky %}sidebar-sticky{% endif %}">
-            
+            <div class="sidebar-about">
+                {{ config.description }}
+            </div>
+            {% block sidebar %}
+            {% endblock sidebar %}
         </div>
     </div>
 

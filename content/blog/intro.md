@@ -1,6 +1,7 @@
 +++
 title = "Introducing Hyde"
 date = 2020-01-01
+description = "A short introduction to the Jekyll theme 'Hyde' created by @mdo for simple static site blogs."
 +++
 
 Hyde is a brazen two-column *Jekyll* theme that pairs a prominent sidebar with uncomplicated content. It's based on **Poole**, the Jekyll butler.

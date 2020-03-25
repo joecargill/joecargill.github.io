@@ -1,6 +1,7 @@
 +++
 title = "Don't Do Dat"
 date = 2020-01-01
+description = "Dennis did damnable doings during da Dakota Decathalon"
 +++
 
 Hyde is a brazen two-column *Jekyll* theme that pairs a prominent sidebar with uncomplicated content. It's based on **Poole**, the Jekyll butler.

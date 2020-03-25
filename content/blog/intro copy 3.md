@@ -1,6 +1,7 @@
 +++
 title = "Cats in Canoes"
 date = 2020-01-01
+description = "Could camels carry countless carrots 'cross countless countries?"
 +++
 
 Hyde is a brazen two-column *Jekyll* theme that pairs a prominent sidebar with uncomplicated content. It's based on **Poole**, the Jekyll butler.

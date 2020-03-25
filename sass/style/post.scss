@@ -5,8 +5,58 @@
  */
 
 .blog-content {
-  padding-top: 4rem;
+  margin-top: 4rem;
+  padding-top: 1rem;
   max-width: 60rem;
+  border: solid 1px #2e2e2e;
+  width: 100%;
+  min-height: 100%;
+  background-color: #171717;
+}
+@media(min-width: 48em) {
+  .blog-content {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 60rem;
+  }
+}
+
+.post-container {
+  border: solid 1px #2e2e2e;
+  width: 100%;
+  background-color: #171717;
+  margin-bottom: 1.5em;
+  padding-top: .6em;
+  padding-bottom: .6em;
+}
+
+.post-title-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+
+  .post-summary {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .post-info {
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+.post-content-container {
+  border-top: solid 1px #2e2e2e;
+  padding-top: .4em;
+  padding-bottom: 0;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
  .post {
