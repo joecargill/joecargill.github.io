@@ -15,8 +15,10 @@ body {
 }
 
 .page {
-  display: grid;
-  grid-template-columns: 1fr 110ch 1fr;
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 110ch 1fr;
+  }
 }
 
 .header {
@@ -30,6 +32,7 @@ body {
   
   font-size: 0px;
   line-height: 30px;
+  
   padding: 25px;
 
   a {
@@ -38,29 +41,41 @@ body {
   }
 
   .bannerName {
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 800;
       padding: 0px 0px 0px 0px;
       margin: 0px 0px 0px 0px;
+      @media screen and (min-width: 1200px) {
+        font-size: 32px;
+      }
   }
   .bannerApostrophe {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 400;
       padding: 0px 3px 0px 0px;
       margin: 0px 0px 0px 0px;
       font-style: italic;
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
+      }
   }
   .bannerDescription {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 400;
       padding: 0px 0px 0px 0px;
       margin: 0px 0px 0px 0px;
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
+      }
   }
   .bannerPeriod {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 900;
       padding: 0px 0px 0px 4px;
       margin: 0px 0px 0px 0px;
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
+      }
   }
 }
 
@@ -69,18 +84,27 @@ body {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 70ch 1fr;
+  display: flex;
+  flex-direction: column;
+
   background: radial-gradient(circle, rgba(15,15,15,1) 50%, rgba(1,1,1,1) 100%);
-  // background-color: #0f0f0f;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  // height: 100vh;
+
+  @media screen and (min-width: 1200px) { 
+    display: grid;
+    grid-template-columns: 70ch 1fr;
+  } 
 }
 
 .recentPostsList {
-  padding: 25px;
-  padding-right: 0px;
+  margin: 0px 20px 0px 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    padding: 25px;
+    padding-right: 0px;
+  }
 
   .recentPost {    
     border-radius: 10px;
@@ -88,9 +112,17 @@ body {
     padding: 20px;
     color: white;
 
-    &:hover {
-      box-shadow: 2px 2px 1px #ffcc00;
-      background: radial-gradient(circle, rgba(15,15,15,1) 15%, rgba(1,1,1,1) 100%);
+    box-shadow: 2px 2px 1px #ffcc00;
+    background: radial-gradient(circle, rgba(15,15,15,1) 15%, rgba(1,1,1,1) 100%);
+
+    @media screen and (min-width: 1200px) {
+      box-shadow: none;
+      background: none;
+
+      &:hover {
+        box-shadow: 2px 2px 1px #ffcc00;
+        background: radial-gradient(circle, rgba(15,15,15,1) 15%, rgba(1,1,1,1) 100%);
+      }
     }
 
     .readMore {
@@ -160,11 +192,17 @@ body {
 
   .readingEntries {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+    }
 
     .readingEntry {
       margin-top: 10px;
+      justify-self: center
     }
 
     .bookCover {
