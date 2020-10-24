@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+  <link rel="stylesheet" href="{{ get_url(path="styles.css", trailing_slash=false) }}">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900"> 
+</head>
+
+<body>
+
+  <div class='page'>
+
+    <div class='left'></div>
+    
+    <div class='middle'>
+
+      <div class='header'>
+        <div class='banner'>
+          <span class='bannerName'>Joe Cargill</span>
+          <span class='bannerApostrophe'>'</span>
+          <span class='bannerDescription'>s personal blog</span>
+          <span class='bannerPeriod'>.</span>
+        </div>
+      </div>
+
+      <div class='main'>
+        
+        {% block content %}
+          <div class='recentPostsList'>
+            <ul>
+              {% for page in section.pages %}
+                <div class='recentPost'>
+                  <a href="{{ page.permalink | safe }}">
+                    <h1>{{ page.title }}</h1>
+                  </a>
+                  <p>{{ page.description }}</p>
+                  <a href="{{ page.permalink | safe }}">
+                    <div class='readMore'>
+                      <span class='postLink'>Read more...</span>
+                    </div>
+                  </a>
+                </div>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class='sidebar'>
+            <div class='sidebar-content'>
+              <div class='aboutMe'>
+                <h1>About me</h1>
+                <p>Working as a Software Engineer.</p>
+                <p>Based in Belfast, Northern Ireland.</p>
+                
+              </div>
+            </div>
+            {# <div class='sidebar-content'>
+              <div class='highlight'></div>
+            </div>
+            <div class='sidebar-content'>
+              <div class='compactPostsList'></div>
+            </div> #}
+          </div>
+        {% endblock content %}
+        
+      </div>
+
+    </div>
+
+    <div class='right'></div>
+  </div>
+
+</body>
+
+</html>

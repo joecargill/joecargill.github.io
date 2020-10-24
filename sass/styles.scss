@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,html {
+    padding: 0;
+    font-family: 'Nunito';
+    background: linear-gradient(#000000, #150723);
+    
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 110ch 1fr;
+}
+
+.header {
+    display: flex;
+    flex-direction: horizontal;
+    margin-top: 15px;
+}
+
+.banner {
+  font-weight: 800;
+  color: #ffcc00;
+  font-size: 0px;
+  line-height: 30px;
+  padding: 25px;
+
+  .bannerName {
+      font-size: 32px;
+      font-weight: 800;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+  }
+  .bannerApostrophe {
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0px 3px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      font-style: italic;
+  }
+  .bannerDescription {
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+  }
+  .bannerPeriod {
+      font-size: 24px;
+      font-weight: 900;
+      padding: 0px 0px 0px 4px;
+      margin: 0px 0px 0px 0px;
+  }
+}
+
+.left, .right {
+  // background-color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 70ch 1fr;
+  background: radial-gradient(circle, rgba(15,15,15,1) 50%, rgba(1,1,1,1) 100%);
+  // background-color: #0f0f0f;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 100vh;
+}
+
+.recentPostsList {
+  padding: 25px;
+  padding-right: 0px;
+
+  .recentPost {    
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
+
+    // box-shadow: 2px 2px 1px #ffcc00;
+    // background-color: #111111;
+
+    &:hover {
+      box-shadow: 2px 2px 1px #ffcc00;
+      // background-color: #111111;
+      background: radial-gradient(circle, rgba(15,15,15,1) 15%, rgba(1,1,1,1) 100%);
+    }
+
+    .readMore {
+      color: white;
+      margin-top: 15px;
+      font-weight: 700;
+
+      .postLink:hover {
+        color: #9837ff;
+        cursor: pointer;
+      }
+    }
+
+    h1 {
+      color: #ffcc00;
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      color: white;
+    }
+    
+  }
+}
+
+.sidebar {
+  padding: 25px;
+  
+}
+
+.sidebar-content {
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px 20px 20px;
+
+  box-shadow: 1px 1px 1px #9837ff;
+  background-color: #111111;
+
+  h1 {
+    color: #9837ff;
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .aboutMe {
+    
+  }
+
+  .highlight {
+  }
+
+  .compactPostsList {
+  }
+}
+
+
+

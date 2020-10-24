@@ -1,11 +1,12 @@
 base_url = "https://joe.cargill.ie"
 
-title = "Joe Cargill."
+title = "Joe Cargill's personal blog."
 description = """A personal website for writing about software engineering, 
 rock-climbing, reading, and anything else"""
 
 compile_sass = true
 highlight_code = true
+highlight_theme = "ayu-dark"
 build_search_index = true
 
 # Put all your custom variables here

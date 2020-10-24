@@ -1,4 +1,4 @@
 +++
-template = "index.html"
+template = "basic.html"
 page_template = "page.html"
 +++
