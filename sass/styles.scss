@@ -179,9 +179,7 @@ body {
     margin-bottom: 5px;
   }
 
-  .aboutMe {
-    
-  }
+  
 
   .highlight {
   }
@@ -190,29 +188,37 @@ body {
   }
 }
 
+.aboutMe {
+    
+}
+
 .readingList {
-  display: flex;
-  flex-direction: column;
+  display: none;
 
-  .readingEntries {
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 1rem;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
 
-    @media screen and (min-width: 1200px) {
-      grid-template-columns: auto auto;
-      justify-content: space-between;
-    }
+    .readingEntries {
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 1rem;
 
-    .readingEntry {
-      margin-top: 10px;
-      justify-self: center
-    }
+      @media screen and (min-width: 1200px) {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+      }
 
-    .bookCover {
-      border-radius: 5px;
-    }
-  }  
+      .readingEntry {
+        margin-top: 10px;
+        justify-self: center
+      }
+
+      .bookCover {
+        border-radius: 5px;
+      }
+    } 
+  } 
 }
 
 .blogPost {
