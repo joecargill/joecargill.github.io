@@ -1,34 +1,20 @@
-{% extends "index.html" %}
-
-{% block sidebar %}
-{% set blog_posts = get_section(path="blog/_index.md") %}
-<div class="posts">
-    {% for post in blog_posts.pages | reverse %}
-        <div class="post-container">
-            <div class="post-title-container">
-                <div class="post-summary">
-                  <h4 class="post-title">
-                      <a href="{{ post.permalink }}">
-                          {{ post.title }}
-                      </a>
-                  </h4>
-                </div>
-                <div class="post-info">
-                    <span><strong>{{ post.date | date(format="%Y-%m-%d") }}</strong></span>
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-</div>
-{% endblock sidebar %}
+{% extends "basic.html" %}
 
 {% block content %}
-<div class="blog-content container">
+{# <div class="blog-content container">
   <div class="post">
     <h1 class="post-title">{{ page.title }}</h1>
     <span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
     {{ page.content | safe }}
   </div>
+</div> #}
+<div class='blogPost'>
+  <div class='blogHeader'>
+    <h1>{{ page.title }}</h1>
+    <span class="blogDate">[ Published {{ page.date | date(format="%d/%m/%Y") }} ]</span>
+  </div>
+  <p>{{ page.description }}</p>
+  {{ page.content | safe }}
 </div>
 {% endblock content %}
 

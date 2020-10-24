@@ -3,11 +3,15 @@
   margin: 0;
 }
 
-body,html {
-    padding: 0;
-    font-family: 'Nunito';
-    background: linear-gradient(#000000, #150723);
-    
+
+html {
+  background: linear-gradient(#000000, #150723);
+  background-color: #000000;
+}
+
+body {
+  padding: 0;
+  font-family: 'Nunito';
 }
 
 .page {
@@ -23,10 +27,15 @@ body,html {
 
 .banner {
   font-weight: 800;
-  color: #ffcc00;
+  
   font-size: 0px;
   line-height: 30px;
   padding: 25px;
+
+  a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
 
   .bannerName {
       font-size: 32px;
@@ -66,7 +75,7 @@ body,html {
   // background-color: #0f0f0f;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  height: 100vh;
+  // height: 100vh;
 }
 
 .recentPostsList {
@@ -79,12 +88,8 @@ body,html {
     padding: 20px;
     color: white;
 
-    // box-shadow: 2px 2px 1px #ffcc00;
-    // background-color: #111111;
-
     &:hover {
       box-shadow: 2px 2px 1px #ffcc00;
-      // background-color: #111111;
       background: radial-gradient(circle, rgba(15,15,15,1) 15%, rgba(1,1,1,1) 100%);
     }
 
@@ -107,6 +112,7 @@ body,html {
 
     a {
       text-decoration: none;
+      display: inline-block;
     }
 
     p {
@@ -127,8 +133,9 @@ body,html {
   margin-bottom: 20px;
   padding: 10px 20px 20px 20px;
 
-  box-shadow: 1px 1px 1px #9837ff;
-  background-color: #111111;
+  box-shadow: 2px 2px 1px #9837ff;
+  background-color: #161616;
+  
 
   h1 {
     color: #9837ff;
@@ -147,5 +154,59 @@ body,html {
   }
 }
 
+.readingList {
+  display: flex;
+  flex-direction: column;
 
+  .readingEntries {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+    .readingEntry {
+      margin-top: 10px;
+    }
+
+    .bookCover {
+      border-radius: 5px;
+    }
+  }  
+}
+
+.blogPost {
+  color: white;
+  padding: 20px 45px;
+  height: 100%;
+  min-height: 100vh;
+
+  ul {
+    padding-left: 25px;
+  }
+
+  h1 {
+    color: #ffcc00;
+    display: inline-block;
+    font-weight: 700;
+  }
+
+  h2,h3,h4,h5 {
+    padding-top: 20px;
+    color: #ffcc00;
+    font-weight: 500;
+  }
+
+  .blogHeader {
+    margin-bottom: 8px;
+  }
+
+  .blogDate {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #9837ff;
+    padding-left: 10px;
+    vertical-align: center;
+    padding: auto 0 auto 0;
+  }
+}
 

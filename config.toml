@@ -11,13 +11,3 @@ build_search_index = true
 
 # Put all your custom variables here
 [extra]
-hyde_sticky = false
-hyde_reverse = false
-hyde_theme = ""
-hyde_links = [
-  {url = "/blog", name = "Blog"},
-  {url = "/about", name = "About"},
-  {url = "https://github.com/joecargill", name = "GitHub"},
-  {url = "https://linkedin.com/in/joecargill", name = "LinkedIn"},
-  {url = "https://drive.google.com/file/d/1I7wV0fVfiOXWz5nOLnb_lyHdqHkq1mWm/view?usp=sharing", name = "Resume", newtab = true}
-]

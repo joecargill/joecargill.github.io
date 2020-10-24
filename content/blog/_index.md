@@ -1,4 +1,4 @@
 +++
 template = "basic.html"
-page_template = "page.html"
+page_template = "post.html"
 +++
