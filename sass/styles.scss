@@ -159,8 +159,12 @@ body {
 }
 
 .sidebar {
-  padding: 25px;
-  
+  margin: 0px 20px 0px 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    padding: 25px;
+  }
 }
 
 .sidebar-content {
