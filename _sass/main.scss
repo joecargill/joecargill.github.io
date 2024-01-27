@@ -1,19 +1,27 @@
 body {
-  font-family: "Newsreader", Fallback, serif;
+  font-family: "NotoSans";
   font-weight: 300;
 }
 
+h1,h2,h3,h4 {
+  font-family: "NotoSerifDisplay";
+}
+
+h1 {
+  font-weight: 400;
+}
+
 table {
-  @extend .table;
-  @extend .table-striped;
+  @extend .table; // bootstrap ?
+  @extend .table-striped; // bootstrap ?
 }
 
 blockquote {
-  @extend .blockquote;
+  @extend .blockquote; // bootstrap  ?
 }
 
 img {
-  @extend .img-fluid;
+  @extend .img-fluid; // bootstrap ?
   margin-bottom: 1rem;
 }
 

@@ -1,3 +1,29 @@
+// Noto Serif Display
+
+@font-face {
+  font-family: "NotoSerifDisplay";
+  src: url("/assets/fonts/NotoSerifDisplay/NotoSerifDisplay-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSerifDisplay";
+  font-style: italic;
+  src: url("/assets/fonts/NotoSerifDisplay/NotoSerifDisplay-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+// Noto Sans
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("/assets/fonts/NotoSans/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-style: italic;
+  src: url("/assets/fonts/NotoSans/NotoSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
 // Playfair
 
 @font-face {
