@@ -1,6 +1,12 @@
+
+
 body {
   font-family: "NotoSans";
   font-weight: 300;
+
+  color: #1b1b1b !important;
+
+  background-color: #f5f3ea;
 }
 
 h1,h2,h3,h4 {
@@ -9,6 +15,10 @@ h1,h2,h3,h4 {
 
 h1 {
   font-weight: 400;
+}
+
+a {
+  color: #1b1b1b !important;
 }
 
 table {
@@ -37,7 +47,7 @@ code {
 
   &__brand {
     padding: 0;
-    color: white;
+    // color: white;
     text-decoration: none;
     font-size: 28px;
     line-height: 1;
@@ -61,12 +71,12 @@ code {
     }
 
     &__title {
-      color: #212529;
+      // color: #212529;
     }
 
     @media (prefers-color-scheme: dark) {
       &__title {
-        color: #e1e1e1;
+        // color: #e1e1e1;
       }
     }
   }
@@ -84,19 +94,19 @@ code {
 
 .footer-icon-links {
   text-decoration: none;
-  color: #212529;
+  // color: #212529;
 }
 
 .footer-icon-links:hover,
 .footer-icon-links:focus {
   text-decoration: none;
-  color: #212529;
+  // color: #212529;
 }
 
 
 
 .highlight {
-  background-color: #272822;
+  // background-color: #272822;
 }
 
 pre.highlight {
@@ -115,13 +125,13 @@ pre.highlight {
 @media (prefers-color-scheme: dark) {
   .footer-icon-links {
     text-decoration: none;
-    color: #e1e1e1;
+    // color: #e1e1e1;
   }
 
   .footer-icon-links:hover,
   .footer-icon-links:focus {
     text-decoration: none;
-    color: #e1e1e1;
+    // color: #e1e1e1;
   }
 
   
